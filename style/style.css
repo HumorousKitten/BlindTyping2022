@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #F8F8F8;
+    
+}
+
+.mobile{
+    display: none;
+}
+
+.header_3D{
+	display: flex;
+	align-items: center;
+	/* border: 1px solid black; */
+}
+
+#canvas3d {
+	position: relative;
+	left: -100px;
+    top: -82px;
+	 
+	z-index: 1; 
+}
+
+
+@font-face {
+    font-family: interRegular;
+    src: url(../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: interBlack;
+    src: url(../fonts/Inter-Black.ttf);
+}
+
+@font-face {
+    font-family: interBold;
+    src: url(../fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: interExtraLight;
+    src: url(../fonts/Inter-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: interLight;
+    src: url(../fonts/Inter-Light.ttf);
+}
+
+@font-face {
+    font-family: DrukTextWideCyrHeavy;
+    src: url(../fonts/Druk_Text_Wide_Cyr_Heavy.otf);
+}
+
+.wrap{
+    width: 1170px;
+    margin: 80px auto;
+    grid-gap: 30px;
+    height: 100%;
+	z-index: 0;
+}
+
+header{
+	/* 1fr */
+    width: 100%;
+    grid-area: header;
+    display: grid;
+    grid-template-areas: "header_DLT header_3D";
+    grid-template-columns: 1.5fr 450px;
+    grid-template-rows: 450px;
+	/* border: 2px solid blue; */
+}
+
+.header_DLT{
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+	z-index: 2;
+}
+
+.titleWithCursor{
+	display: flex;
+}
+
+.cursor{
+	width: 3px;
+	height: 85px;
+	background-color: #0066FF;
+	animation: glowing 1300ms infinite;
+	border-radius: 10px;
+}
+
+@keyframes glowing {
+	50% { background-color: white;}
+}
+
+.header_DLT h1{
+    font-family: DrukTextWideCyrHeavy;
+    height: 105px;
+    font-size: 64px;
+	margin-bottom: 40px;
+}
+
+.header_text{
+    margin-top: 25px;
+    font-family: interLight;
+    height: 71px;
+    width: 520px;
+}
+
+.header_button{
+    background-color: #0066FF;
+    height: 28px;
+    width: 100px;
+    border-radius: 23.5px;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: interLight;
+}
+
+.header_button:hover{
+    cursor: pointer;
+}
+
+main{
+    margin-top: -100px;
+}
+
+h2{
+    font-family: interBlack;
+    margin-bottom: 40px;
+    margin-top: 90px;
+    font-size: 33px;
+}
+
+.main_Title{
+    display: flex;
+    margin-left: 115px;
+}
+
+.main_Title  img{
+    position: relative;
+    right: 53px;
+}
+
+.main_info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    position: relative;
+    bottom: 180px;
+    justify-content: center;
+}
+
+.info_blockOne{
+    height: 192.91px;
+    width: 564.44px;
+    border-radius: 10px;
+    background-color: #000000;
+    display: flex;
+    transition: 0.2s linear;
+}
+
+.info_blockOne:hover {
+    transform: scale(1.03);
+}
+
+.info_blockOne h5{
+    margin-top: 35px;
+    margin-left: 45px;
+    margin-bottom: 5px;
+    height: 68px;
+    width: 589px;
+    color: white;
+    font-family: interBlack;
+    font-size: 33px;
+    line-height: 30px;
+}
+
+.info_blockOne p{
+    margin-left: 45px;
+    height: 84px;
+    width: 482px;
+    font-family: interExtraLight;
+    font-size: 15px;
+    line-height: 18px;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.info_blockTwo {
+    height: 192.91px;
+    width: 337.26px;
+    border-radius: 10px;
+    background: linear-gradient(188.87deg, rgba(255, 255, 255, 0) -20.72%, #FFFFFF 55.76%);
+    /* display: flex; */
+    transition: 0.2s linear;
+    box-shadow: 0px 4px 3px 0px #00000008;
+}
+
+.info_blockTwo:hover {
+    transform: scale(1.03);
+}
+
+.info_blockTwo h5 {
+    font-family: interBlack;
+    color: #000000;
+    height: 70px;
+    width: 334px;
+    font-size: 33px;
+    line-height: 30px;
+    margin-top: 40px;
+    margin-left: 32px;   
+}
+
+.info_blockTwo p {
+    font-family: interRegular;
+    color: #000000;
+    height: 102px;
+    width: 260px;
+    font-size: 15px; 
+    margin-left: 32px;
+}
+
+.info_blockThree {
+    height: 286px;
+    width: 440px;
+    border-radius: 10px;
+    background: linear-gradient(188.87deg, rgba(255, 255, 255, 0) -20.72%, #FFFFFF 55.76%);
+    transition: 0.2s linear;
+    box-shadow: 0px 4px 3px 0px #00000008;
+}
+
+.info_blockThree:hover {
+    transform: scale(1.03);
+}
+
+.info_blockThree h5 {
+    font-family: interBlack;
+    color: #000000;
+    font-size: 33px;
+    line-height: 30px;
+    height: 124px;
+    width: 355px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
+.info_blockThree p {
+    font-family: interRegular;
+    color: #000000;
+    height: 123px;
+    width: 355px;
+    font-size: 15px;
+    line-height: 18px;
+    margin-left: 50px;
+}
+
+.info_blockFour {
+    height: 286px;
+    width: 467px;
+    border-radius: 10px;
+    background-color: #000000;
+    transition: 0.2s linear;
+}
+
+.info_blockFour:hover {
+    transform: scale(1.03);
+}
+
+.info_blockFour h5 {
+    font-family: interBlack;
+    color: white;
+    height: 90px;
+    width: 302px;
+    font-size: 33px;
+    line-height: 30px;
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.info_blockFour p {
+    font-family: interExtraLight;
+    color: #FFFFFF;
+    height: 152px;
+    width: 353px;
+    font-size: 15px;
+    line-height: 18px;
+    margin-left: 40px;
+}
+
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: #101010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* position: fixed;
+    bottom: 0px; */
+    font-family: interBlack;
+    margin-top: auto;
+}
+
+footer span{
+    margin-left: 5px;
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+    margin-left: 400px;
+}
+
+
+@media screen and (max-width: 1070px){
+    .wrap{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .mobile{
+        display: flex; 
+    }
+
+    .mobile>div{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .mobile>div>span:first-child{
+        color:#000000;
+        font-family: interBold;
+        font-size: 35px;
+        line-height: 42.74px;
+    }
+
+    .mobile>div>span:last-child{
+        font-family: interLight;
+        font-size: 32px;
+        line-height: 38px;
+    }
+}

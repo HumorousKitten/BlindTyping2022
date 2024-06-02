@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <title>BlindTyping</title>
+    <link rel="stylesheet" href="style/styleTwo.css">
+    <link rel="shortcut icon" href="icons/favicon-48x48.png" type="image/x-icon">
+</head>
+<body>
+    <div class="mobile">
+        <img src="img/block.png" alt="block">
+        <div>
+            <span>Откройте сайт</span>
+            <span>на устройстве <br> с большей шириной <br> экрана</span>
+        </div>
+    </div>
+    
+    <div class="wrapper">
+        <header class="wrapper_header">
+            <div class="wrapper_Title">
+                <div class="triangle-left"></div>
+                <h1>НЕПОБЕДИМАЯ <br> СИЛА ДУХА</h1>
+                <div class="triangle-right"></div>
+            </div>
+            <div class="timer"><div></div><span id="timer">00:00</span></div>
+        </header>
+
+        <div class="wrapper_content">
+            <div class="content_field">
+                <div class="info">
+                    <div class="start">
+                        <span class="sixOpechatok">
+                            <span class="interBlack mist" id="mistakes">0</span>
+                            <span class="interRegular" id="mist">опечаток</span>
+                        </span>
+                            
+                        <span>
+                            <span class="interBlack mist" id="speed">0</span> 
+                            <span class="interRegular" id="countSymb">симв/мин</span>
+                        </span>
+                            
+                        <div id="levels"  class="interRegular level"><span><span id="ur">1</span> <span class="urName" id="level">уровень</span> </span></div>
+                    </div>
+                
+                    <div class="end"><img src="img/return.svg" id="restart" class ="restart" alt="return" width="17px">
+                    <div><span>ru</span> <hr></div></div>
+                </div>
+                <div>
+                    <span class="invisibleText" id="invisibleText" ></span>
+                    <input type="text" class="text_field" id="field" maxlength="70" autofocus spellcheck="false">
+                </div>
+            </div>
+            <div class="switchLevels">
+                <div class="prevLevel"><img src="icons/left-arrow.png" id="left-arrow" alt="" width="38px" class="colorArrow"></div>
+                <div class="content_keyboard">
+                    <div class="rowOne">
+                        <div class="keycaps" id="Backquote">ё</div>
+                        <div class="keycaps" id="Digit1">1</div>
+                        <div class="keycaps" id="Digit2">2</div>
+                        <div class="keycaps" id="Digit3">3</div>
+                        <div class="keycaps" id="Digit4">4</div>
+                        <div class="keycaps" id="Digit5">5</div>
+                        <div class="keycaps" id="Digit6">6</div>
+                        <div class="keycaps" id="Digit7">7</div>
+                        <div class="keycaps" id="Digit8">8</div>
+                        <div class="keycaps" id="Digit9">9</div>
+                        <div class="keycaps" id="Digit0">0</div>
+                        <div class="keycaps" id="Minus">-</div>
+                        <div class="keycaps" id="Equal">=</div>
+                        <div class="backspace" id="Backspace"><img src="img/backSpace.svg" alt="backSpace"></div>
+                    </div>
+                    <div class="rowTwo">
+                        <div class="tab" id="Tab">tab</div>
+                        <div class="keycaps" id="KeyQ">й</div>
+                        <div class="keycaps" id="KeyW">ц</div>
+                        <div class="keycaps" id="KeyE">у</div>
+                        <div class="keycaps" id="KeyR">к</div>
+                        <div class="keycaps" id="KeyT">е</div>
+                        <div class="keycaps" id="KeyY">н</div>
+                        <div class="keycaps" id="KeyU">г</div>
+                        <div class="keycaps" id="KeyI">ш</div>
+                        <div class="keycaps" id="KeyO">щ</div>
+                        <div class="keycaps" id="KeyP">з</div>
+                        <div class="keycaps" id="BracketLeft">х</div>
+                        <div class="keycaps" id="BracketRight">ъ</div>
+                        <div class="keycaps" id="Backslash">\</div>
+                    </div>
+                    <div class="rowThree">
+                        <div class="caps" id="CapsLock">caps</div>
+                        <div class="keycaps" id="KeyA">ф</div>
+                        <div class="keycaps" id="KeyS">ы</div>
+                        <div class="keycaps" id="KeyD">в</div>
+                        <div class="keycaps" id="KeyF">а</div>
+                        <div class="keycaps" id="KeyG">п</div>
+                        <div class="keycaps" id="KeyH">р</div>
+                        <div class="keycaps" id="KeyJ">о</div>
+                        <div class="keycaps" id="KeyK">л</div>
+                        <div class="keycaps" id="KeyL">д</div>
+                        <div class="keycaps" id="Semicolon">ж</div>
+                        <div class="keycaps" id="Quote">э</div>
+                        <div class="enter" id="Enter">enter</div>
+                    </div>
+                    <div class="rowFour">
+                        <div class="shift" id="ShiftLeft" >shift</div>
+                        <div class="keycaps" id="KeyZ">я</div>
+                        <div class="keycaps" id="KeyX">ч</div>
+                        <div class="keycaps" id="KeyC">с</div>
+                        <div class="keycaps" id="KeyV">м</div>
+                        <div class="keycaps" id="KeyB">и</div>
+                        <div class="keycaps" id="KeyN">т</div>
+                        <div class="keycaps" id="KeyM">ь</div>
+                        <div class="keycaps" id="Comma">б</div>
+                        <div class="keycaps" id="Period">ю</div>
+                        <div class="keycaps" id="Slash">.</div>
+                        <div class="shift2" id="ShiftRight">shift</div>
+                    </div>
+                    <div class="space" id="Space"></div>
+                </div>
+                <div class="nextLevel"><img src="icons/right-arrow.png" id="right-arrow" alt="r-arr" width="38px" class="colorArrow"></div>
+            </div>
+
+            <div class="levelMenu" id="levelMenu">
+                <ul>
+                    <div id="1" class="stage">
+                        <li>1 уровень</li>
+                        <li class="interRegular"><span class="num">1</span>ф ы в а о л д ж</li>
+                    </div>
+                    <div id="2" class="stage">
+                        <li>2 уровень</li>
+                        <li class="interRegular"><span class="num">2</span>п р ф а ы о ж д</li>
+                    </div>
+                    <div id="3" class="stage">
+                        <li>3 уровень</li>
+                        <li class="interRegular"><span class="num">3</span>к г в ы д а ж л</li>
+                    </div>
+                    <div id="4" class="stage">
+                        <li>4 уровень</li>
+                        <li class="interRegular"><span class="num">4</span>у ш ф ж в р п к</li>
+                    </div>
+                    <div id="5" class="stage">
+                        <li>5 уровень</li>
+                        <li class="interRegular"><span class="num">5</span>м ь ф в п ш а .</li>
+                    </div>
+                    <div id="6" class="stage">
+                        <li>6 уровень</li>
+                        <li class="interRegular"><span class="num">6</span>и т ф а р ь м ,</li>
+                    </div>
+                    <div id="7" class="stage">
+                        <li>7 уровень</li>
+                        <li class="interRegular"><span class="num">7</span>с б г ь у р . ,</li>
+                    </div>
+                    <div id="8" class="stage">
+                        <li>8 уровень</li>
+                        <li class="interRegular"><span class="num">8</span> е н ш п ж к , .</li>
+                    </div>
+                    <div id="9" class="stage">
+                        <li>9 уровень</li>
+                        <li class="interRegular"><span class="num">9</span>т р и б ь д , .</li>
+                    </div>
+                    <div id="10" class="stage">
+                        <li>10 уровень</li>
+                        <li class="interRegular"><span class="num">10</span>й з г в т а ж ,</li>
+                    </div>
+                    <div id="11" class="stage">
+                        <li>11 уровень</li>
+                        <li class="interRegular"><span class="num">11</span>ч ю л б т й у ,</li>
+                    </div>
+                    <div id="12" class="stage">
+                        <li>12 уровень</li>
+                        <li class="interRegular"><span class="num">12</span>ц щ ч э с й , .</li>
+                    </div>
+                    <div id="13" class="stage">
+                        <li>13 уровень</li>
+                        <li class="interRegular"><span class="num">13</span> х ъ э т ы б г ,</li>
+                    </div>
+                    <div id="14" class="stage">
+                        <li>14 уровень</li>
+                        <li class="interRegular"><span class="num">14</span>ё ж т у ч з -</li>
+                    </div>
+                    <div id="15" class="stage">
+                        <li>15 уровень</li>
+                        <li class="interRegular"><span class="num">15</span> 1 2 3 4 5 у е л</li>
+                    </div>
+                    <div id="16" class="stage">
+                        <li>16 уровень</li>
+                        <li class="interRegular"><span class="num">16</span> 6 7 8 9 0 ф п к</li>
+                    </div>
+                    <div id="17" class="stage">
+                        <li>17 уровень</li>
+                        <li class="interRegular"><span class="num">17</span>! " ; : ? * ( )</li>
+                    </div>
+                    <div id="18" class="stage">
+                        <li>18 уровень</li>
+                        <li class="interRegular"><span class="num">18</span>№ % = + / ц м д</li>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="fail" id="failBlock">
+                <div class="fail_block">
+                    <img src="img/face with open mouth vomiting 1.png" alt="vomiting" width="118px">
+                    <p class="ups">УПС...ПОПРОБУЙ ЗАНОВО</p>
+                    <div >
+                        <span class="interRegular"><span class="win_mist" id="fail_mist"></span> опечаток</span>
+                        <span class="interRegular"><span class="win_speed" id="fail_speed"></span> симв/мин</span>  
+                    </div>
+                    <p>Нажмите любую клавишу, чтобы закрыть окно</p>
+                </div>
+                <img src="icons/remove.svg" alt="remove" width="16px" style="position: relative; top: -135px; right: -30px;">
+            </div>
+
+            <div class="success" id="successBlock">
+                <div class="success_block">
+                    <img src="img/face with cowboy hat 2.png" alt="faceWithCowboyHat" width="128px">
+                    <p class="great">ПОЛУЧИЛОСЬ! <br> ИДЕМ ДАЛЬШЕ</p>
+                    <div>
+                        <span class="interRegular"><span class="win_mist" id="success_mist"></span> опечаток</span>
+                        <span class="interRegular"><span class="win_speed" id="success_speed">155</span> симв/мин</span>
+                    </div>
+                    <p>Нажмите любую клавишу, чтобы закрыть окно</p>
+                </div>
+                <img src="icons/remove.svg" alt="remove" width="16px" style="position: relative; top: -135px; right: -30px;">
+            </div>
+
+            <div class="btn"><input type="submit" value="Назад" class="content_button" onclick="javascript:location.href='pageOne.html';"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <footer id="footer">
+            <div class="glare">
+                <div></div>
+                <div></div>
+            </div>          
+        </footer>
+        <div class="pointer"></div>
+    </div>
+    <script src="pageTwo.js"></script>
+</body>
+</html>

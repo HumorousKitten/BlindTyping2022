@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>BlindTyping</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="icons/favicon-48x48.png" type="image/x-icon">
+</head>
+<body>
+    <div class="mobile">
+        <img src="img/block.png" alt="block">
+        <div>
+            <span>Откройте сайт</span>
+            <span>на устройстве <br> с большей шириной <br> экрана</span>
+        </div>
+    </div>
+    <div class="wrap">
+        <header>
+            <div class="header_DLT">
+        		<div class="titleWithCursor">
+        			<div class="cursor"></div>
+        			<h1>DON'T LOOK. <br> TYPE</h1>
+        		</div>
+                <p class="header_text">Простой и удобный в использовании клавиатурный тренажер, которыйпоможет вам освоить навык печати, повысить скорость набора текст и уменьшить количество опечаток.</p>
+                <div><input type="submit" value="Начать" class="header_button" onclick="javascript:location.href='pageTwo.html';"></input></div>
+            </div>
+            <div class="header_3D"><canvas id="canvas3d"></canvas></div>
+        </header>
+    
+        <main>
+            <div class="main_Title">
+                <h2>ЗАЧЕМ НУЖНА <br> СЛЕПАЯ ПЕЧАТЬ?</h2>
+                <img src="img/cuteMan.png" alt="" width="330px" draggable="false">
+            </div>
+            <div class="main_info">
+                <div class="info_blockOne">
+                    <div>
+                        <h5>Повышение <br> скорости печати</h5>
+                        <p>В наборе текста участвует все десять пальцев. У каждого из них своя зона ответственности на клавиатуре. После тренировки пальцы сами знают, на какие клавиши им прыгать.</p>
+                    </div>
+                    <img src="img/Vector_71.png" alt="light" style="position: relative; right: 250px; z-index: 0;" draggable="false">
+                </div>
+                        
+                <div class="info_blockTwo">
+                    <h5>Меньше<br>опечаток</h5>
+                    <p>Сосредотачиваясь на словах, а не на клавишах, повышается концентрация и аккуратность.</p>
+                    <img src="img/Vector_12.png" alt="" style="position: relative; bottom: 205px;left: 215px;" draggable="false">
+                </div>
+                        
+                <div class="info_blockThree">
+                    <h5>Снижает физическую и ментальную усталость</h5>
+                    <p>Не нужно постоянно опускать взгляд на клавиатуру. Так меньше устают глаза и шея. Кроме физической,слепая печать снижает и ментальную нагрузку. Позволяя сконцентрироваться на наборе текста.</p>
+                    <img src="img/Vector_6.png" alt=""
+                        style="position: relative; bottom: 270px; left: 260px;" draggable="false">
+                </div>
+                
+                <div class="info_blockFour">
+                    <h5>Улучшение мелкой <br> моторики</h5>
+                    <p>Движение пальцев по клавишам требуют координации и хорошо развитой мелкой моторики. Такое мощное развитие мышечной памяти хорошо на это влияет.</p>
+                    <img src="img/Group_16.png" alt="" style="position: relative; bottom: 281px; left: 226px;" draggable="false">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div>
+            <img src="icons/cube.svg" alt="cube_Icon" draggable="false">
+            <span>Blind Typing</span>
+        </div>
+        <img src="img/footerVector.svg" alt="" draggable="false" style="position: relative; top: -15px">
+    </footer>
+
+	<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.80/build/runtime.js"
+        }
+      }
+    </script>
+    <script type="module" src="style/main.js"></script>
+</body>
+</html>

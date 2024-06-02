@@ -1,0 +1,15 @@
+{
+  "name": "untitled",
+  "version": "1.0.0",
+  "description": "Scene exported with Spline",
+  "scripts": {
+    "start": "serve"
+  },
+  "devDependencies": {
+    "json-server": "^0.17.0",
+    "serve": "^13.0.2"
+  },
+  "dependencies": {
+    "@splinetool/runtime": "^0.9.80"
+  }
+}
